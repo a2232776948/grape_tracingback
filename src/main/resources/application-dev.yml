@@ -1,0 +1,10 @@
+spring:
+  # 数据库信息配置
+  datasource:
+    url: jdbc:mysql://localhost:3306/grape_tracingdb?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+server:
+  port: 8080
