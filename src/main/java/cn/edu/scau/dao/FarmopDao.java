@@ -15,4 +15,6 @@ public interface FarmopDao {
     List<Farmop> findAllFarmop();
     @Select("select area_id,tree_id,farmop_des,farmcate_name,farmop_time,opperson from farmop,farmcate where farmop.farmcate_id=farmcate.farmcate_id")
     List<FarmopDTO> findDTOAllFarmop();
+    @Select("select area_id,tree_id,farmop_des,farmcate_name,farmop_time,opperson from farmop,farmcate where farmop.farmcate_id=farmcate.farmcate_id and farmop_id=#{id}")
+    FarmopDTO findOneFarmopById(Integer id);
 }
