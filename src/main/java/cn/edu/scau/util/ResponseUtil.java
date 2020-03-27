@@ -8,8 +8,6 @@ public class ResponseUtil {
      * http 响应成功
      */
     public static Response success(Object result) {
-
-
         Response response = getResponse("success");
         response.setStatus(200);
         response.setResult(result);
@@ -71,3 +69,4 @@ public class ResponseUtil {
         return response;
     }
 }
+

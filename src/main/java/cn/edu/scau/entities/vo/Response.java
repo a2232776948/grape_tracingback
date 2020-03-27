@@ -3,10 +3,10 @@ package cn.edu.scau.entities.vo;
 import lombok.Data;
 
 @Data
-public class Response {
+public class Response<T> {
     private Integer status;
     private String msg;
-    private Object result;
+    private T result;
     private Object error;
 }
 

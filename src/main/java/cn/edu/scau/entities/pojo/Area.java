@@ -6,5 +6,5 @@ import lombok.Data;
 public class Area {
     private long areaId;
     private String areaName;
-
+    private String addr;
 }
