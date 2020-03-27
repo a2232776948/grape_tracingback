@@ -50,10 +50,6 @@ public class UserServiceImpl implements UserService {
 
     }
 
-    @Override
-    public void register(String userName,String passWord) {
-
-    }
 
     @Override
     public void updateUser(User user) {

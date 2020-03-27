@@ -9,7 +9,6 @@ import java.util.List;
 public interface UserService {
     public User login(String userName, String passWord) throws GlobalException;
     public void logiOut(String userName,String passWord);
-    public void register(String userName,String passWord);
 
     public void updateUser(User user);
     public void deleteUser(String name);
